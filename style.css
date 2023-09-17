@@ -1,0 +1,598 @@
+@font-face {
+    font-family: 'custom';
+    src: url("/assets/font/Bahnschrift.ttf") format('truetype');
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'custom';
+    font-variation-settings: 'wght' 400 , 'wdth' 75;
+    color : #282828;
+}
+
+.headerContainer{
+    width: 100%;
+    height: 108px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* HEADER TOP SECTION */
+.headerTopBg{
+    width: 100%;
+    background-color: #F5F8FF;
+    display: flex;
+    justify-content: center;
+}
+
+.headerTopWrapper{
+    max-width: 1272px;
+    width: 100%;
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topNav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.topNavLinkItem{
+    text-decoration: none;
+    margin: 0 40px 0 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.topNavIconsItems{
+    width: 12px;
+    height: 12px;
+}
+
+/* HEADER BOTTOM SECTION */
+.headerBottomBg{
+    width: 100%;
+    background-color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+}
+
+.headerBottomWrapper{
+    max-width: 1281px;
+    width: 100%;
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bottomNav{
+    width: 100%;
+    height: 68px;
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalogBtn{
+    width: 176px;
+    height: 40px;
+    border-radius: 60px;
+    background: linear-gradient(to right, #2A5CF6, #2A5CF6, #7191F4);
+    display: flex;
+    align-items: center;
+    padding: 10px 24px 10px 16px;
+    cursor: pointer;
+}
+
+.catalogBtn:hover{
+    width: 176px;
+    height: 40px;
+    border-radius: 60px;
+    background: linear-gradient(to right, #9E0CAA, #242AFF, #23FBE1);
+    display: flex;
+    align-items: center;
+    padding: 10px 24px 10px 16px;
+}
+
+.burgerIcon{
+    margin: 0 12px 0 0;
+}
+
+.buregerMenuTitle{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.searchLineContainer{
+    max-width: 828px;
+    width: 100%;
+    height: 40px;
+    border-radius: 56px;
+    background: linear-gradient(180deg, rgb(42, 92, 246) 0%, rgb(42, 92, 246) 0.01%, rgb(112.71, 144.96, 244.29) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 2px;
+    margin: 0 20px 0 26px;
+    cursor: pointer;
+}
+.searchLineContainer:hover{
+    background: linear-gradient(to right, #9E0CAA, #242AFF, rgb(42, 92, 246));
+}
+.hiddenInput{
+    width: 100%;
+    max-width: 744px;
+    border-radius: 56px;
+    border: none;
+    height: 36px;
+    padding: 9px 22px 8px 24px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hiddenInput::placeholder{
+    color : #A9A9A9;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hiddenInput:focus{
+    outline: none;
+}
+.searchButtonTitle{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 16px;
+}
+
+.bottomNavIcons{
+width: 228px;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: end;
+}
+
+.profile{
+    background-image: url("./assets/profileIcon.svg");
+    background-repeat: no-repeat;
+    background-size: 72% 22px;
+    height: 36px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.profile:hover{
+    background-image: url("./assets/profileHoverIcon.svg");
+    background-repeat: no-repeat;
+    background-size: 72% 22px;
+    height: 36px;
+    width: 50px;
+}
+
+.likes{
+    background-image: url("./assets/likeIcon.svg");
+    background-repeat: no-repeat;
+    background-size: 86% 22px;
+    height: 36px;
+    width: 81px;
+    cursor: pointer;
+}
+.likes:hover{
+    background-image: url("./assets/likeHoverIcon.svg");
+    background-repeat: no-repeat;
+    background-size: 86% 22px;
+    height: 36px;
+    width: 81px;
+}
+
+
+.basket{
+    background-image: url("./assets/basketIcon.svg");
+    background-repeat: no-repeat;
+    background-size: 79% 22px;
+    height: 36px;
+    width: 54px;
+    cursor: pointer;
+}
+
+.basket:hover{
+    background-image: url("./assets/basketHoverIcon.svg");
+    background-repeat: no-repeat;
+    background-size: 79% 22px;
+    height: 36px;
+    width: 54px;
+    cursor: pointer;
+}
+
+.bottomNavIconsTitle{
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    top: 23px;
+}
+
+
+/* MAIN CONTENT */
+
+
+.main{
+    width: 100%;
+    height: 1600px;
+    background-color: #e6e6e6;
+    padding: 14px 0 0 0;
+    overflow-x: hidden;
+    transition: ease 0.4s;
+    transform: rotateX(1200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* BANNER BLOCK */
+.bannerContainerWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: unset;
+}
+
+/* FIRST BANNER */
+.bannerContainer1{
+    max-width: 97%;
+    width: 100%;
+    height: 356px;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 26px;
+    flex: 0 0 100%;
+}
+
+.cristmasTree1{
+    max-width: 199px;
+    width: 100%;
+    height: 148px;
+    border-radius: 12px 0 0 0;
+}
+
+.bannerTitleBlock{
+    max-width: 477px;
+    width: 100%;
+    height: 301px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 36px;
+}
+
+.bannerTitle{
+    font-size: 28px;
+    font-weight: 600;
+    color : #9E0CAA;
+    margin: 5px 0 10px 0;
+    white-space: nowrap;
+}
+
+.bannerListContainer{
+    position: relative;
+    left: 25px;
+    top: 4px;
+    width: 80%;
+}
+
+.bannerListItem{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px 0 6px 0;
+}
+
+.bannerBtn{
+    width: 206px;
+    height: 42px;
+    border: none;
+    background: linear-gradient(to right, #9E0CAA, #242AFF, #23FBE1);
+    border-radius: 61px;
+    margin: 16px 0 0 0;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cristmasTree2{
+    height: 264px;
+    width: 238px;
+    position: relative;
+    top: 92px;
+}
+.cristmasTree3{
+    height: 353px;
+    width: 238px;
+    position: relative;
+    top: 3px;
+    right: 86px;
+}
+.cristmasTree4{
+    max-width: 132px;
+    width: 100%;
+    height: 187px;
+    border-radius: 0 12px 0 0;
+    position: relative;
+    top: 0;
+}
+
+@media screen and (max-width: 1405px) {
+    .bannerContainer1{
+        height: 321px;
+    }
+    .cristmasTree1{
+        height: 108px;
+        width: 117px;
+    }
+    .cristmasTree2{
+        height: 177px;
+        width: 145px;
+        position: relative;
+        top: 144px;
+    }
+    .cristmasTree3{
+        height: 259px;
+        width: 161px;
+        top: 61px;
+        right: 63px;
+    }
+    .cristmasTree4{
+        max-width: 103px;
+        height: 134px;
+    }
+    .bannerTitleBlock{
+        max-width: 600px;
+    }
+    .bannerTitle{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 935px) {
+    .bannerTitleBlock{
+        max-width: 204px;
+    }
+}
+
+@media screen and (max-width : 849px) {
+    .cristmasTree1{
+        height: 87px;
+        width: 86px;
+    }
+    .cristmasTree2{
+        height: 168px;
+        width: 131px;
+        position: relative;
+        top: 154px;
+    }
+    .cristmasTree3{
+        height: 249px;
+        width: 138px;
+        top: 72px;
+        right: 63px;
+    }
+    .cristmasTree4{
+        max-width: 88px;
+        height: 105px;
+    }
+    .bannerTitleBlock{
+        max-width: 229px;
+    }
+}
+
+/* SECOND BANNER */
+
+.bannerContainer2{
+    max-width: 97%;
+    width: 100%;
+    height: 356px;
+    background-color: #000000;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 26px;
+    flex: 0 0 100%;
+}
+
+.bannerTitle2{
+    font-size: 28px;
+    font-weight: 600;
+    color: #242AFF;
+    margin: 5px 0 10px 0;
+    white-space: nowrap;
+}
+.bannerTitleBlock .bannerListItem2{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px 0 6px 0;
+    color: white;
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width: 1405px) {
+    .bannerContainer2{
+        height: 321px;
+    }
+    .bannerTitle2{
+        font-size: 20px;
+    }
+    .bannerListItem2{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* THIRD BANNER */
+
+.bannerContainer3{
+    max-width: 97%;
+    width: 100%;
+    height: 356px;
+    background: linear-gradient(to right,#23FBE1 , #242AFF,#9E0CAA );
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 26px;
+    flex: 0 0 100%;
+}
+.sale1{
+    width: 186px;
+    height: 180px;
+    border-radius: 12px 0 0 0;
+    margin: 0 23px 0 0;
+}
+.bannerTitle3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 5px 0 10px 0;
+    white-space: nowra
+}
+.bannerTitleBlock .bannerListItem3{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px 0 6px 0;
+    color: white;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1405px) {
+    .bannerContainer3{
+        height: 321px;
+    }
+    .bannerTitle3{
+        font-size: 20px;
+    }
+    .bannerListItem3{
+        font-size: 14px;
+    }
+}
+
+
+
+/* FEATURES */
+
+.featuresContainerWrapper{
+    max-width: 1281px;
+    width: 100%;
+    height: 262px;
+    margin: 30px 0 30px 0;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featuresItem{
+    width: 237px;
+    height: 262px;
+    border-radius: 40px;
+    background: linear-gradient(217deg, #5877FE, rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, #C2FFF8, rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, #C2FFF8, rgba(0,0,255,0) 70.71%);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 24px 24px 0 24px;
+    margin: 6px;
+    flex-grow: 1;
+}
+
+.featuresItem_title{
+    font-size: 18px;
+    font-variation-settings: 'wght' 600 , 'wdth' 88;
+    margin: 0 0 10px 0;
+}
+
+.description{
+    font-size: 16px;
+    font-variation-settings: 'wght' 400 , 'wdth' 88;
+    color: #525252;
+}
+
+.featuresItemIcons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    /* border: solid red; */
+}
+
+.featuresItemIcons .sberIcon{
+    position: absolute;
+    left: -18px;
+    top: 17px;
+}
+
+.featuresItemIcons .wbIcon{
+    position: absolute;
+    left: 129px;
+    bottom: -60px;
+}
+
+.featuresItemIcons .yamarketIcon{
+    position: absolute;
+    left: -18px;
+    bottom: -123px;
+}
+
+.featuresItemIcons .ozonIcon{
+    position: absolute;
+    left: 96px;
+    bottom: -128px;
+}
+
+.featuresItemIcons .bankIcon{
+    position: absolute;
+    left: -14px;
+    bottom: -108px;
+}
+
+.featuresItemIcons .tagIcon{
+    position: absolute;
+    right: -23px;
+    bottom: -86px;
+}
+
+.featuresItemIcons .carIcon{
+    position: absolute;
+    right: -24px;
+    bottom: -68px;
+    border-radius: 0 0 35px 0;
+    height: 100px;
+}
+
+.featuresItemIcons .houseIcon{
+    position: absolute;
+    right: 1px;
+    bottom: -127px;
+    border-radius: 0 0 35px 0;
+    height: 115px;
+}
